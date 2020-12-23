@@ -281,212 +281,226 @@ pokemonList = [
   },
   {
     number: 40,
+    name: 'Wigglytuff',
+    height: 1,
+    weight: 12,
+    types: ['Fairy', 'Normal']
+  },
+  {
+    number: 41,
     name: 'Zubat',
     height: .8,
     weight: 7.5,
     types: ['Poison', 'Flying']
   },
   {
-    number: 41,
+    number: 42,
     name: 'Golbat',
     height: 1.6,
     weight: 55,
     types: ['Poison', 'Flying']
   },
   {
-    number: 42,
+    number: 43,
     name: 'Oddish',
     height: .5,
     weight: 5.4,
     types: ['Grass', 'Poison']
   },
   {
-    number: 43,
+    number: 44,
     name: 'Gloom',
     height: .8,
     weight: 8.6,
     types: ['Grass', 'Poison']
   },
   {
-    number: 44,
+    number: 45,
     name: 'Vileplume',
     height: 1.2,
     weight: 18.6,
     types: ['Grass', 'Poison']
   },
   {
-    number: 45,
+    number: 46,
     name: 'Paras',
     height: .3,
     weight: 5.4,
     types: ['Grass', 'Bug']
   },
   {
-    number: 46,
+    number: 47,
     name: 'Parasect',
     height: 1,
     weight: 29.5,
-    types: ['']
+    types: ['Grass', 'Bug']
   },
   {
-    number: 47,
+    number: 48,
     name: 'Venonat',
     height: 1,
     weight: 30,
     types: ['Bug', 'Poison']
   },
   {
-    number: 4,
+    number: 49,
     name: 'Venomoth',
     height: 1.5,
     weight: 12.5,
     types: ['Bug', 'Poison']
   },
   {
-    number: 7,
+    number: 50,
     name: 'Diglett',
     height: .2,
     weight: .8,
     types: ['Ground']
   },
   {
-    number: 7,
+    number: 51,
     name: 'Dugtrio',
     height: .7,
     weight: 33.3,
     types: ['Ground']
   },
   {
-    number: 7,
+    number: 52,
     name: 'Meowth',
     height: .4,
     weight: 4.2,
     types: ['Normal']
   },
   {
-    number: 7,
+    number: 53,
     name: 'Persian',
     height: 1,
     weight: 32,
     types: ['Normal']
   },
   {
-    number: 7,
+    number: 54,
     name: 'Psyduck',
     height: .8,
     weight: 19.6,
     types: ['Water']
   },
   {
-    number: 7,
+    number: 55,
     name: 'Golduck',
-    height: ,
-    weight: ,
-    types: ['']
+    height: 1.7,
+    weight: 76.6,
+    types: ['Water']
   },
   {
-    number: 7,
+    number: 56,
     name: 'Mankey',
     height: .5,
     weight: 28,
     types: ['Fighting']
   },
   {
-    number: 7,
+    number: 57,
     name: 'Primeape',
     height: 1,
     weight: 32,
     types: ['Fighting']
   },
   {
-    number: 7,
+    number: 58,
     name: 'Growlithe',
     height: .7,
     weight: 19,
     types: ['Fire']
   },
   {
-    number: 7,
+    number: 59,
     name: 'Arcanine',
     height: 1.9,
     weight: 155,
     types: ['Fire']
   },
   {
-    number: 7,
+    number: 60,
     name: 'Poliwag',
     height: .6,
     weight: 12.4,
     types: ['Water']
   },
   {
-    number: 7,
+    number: 61,
     name: 'Poliwhirl',
     height: 1,
     weight: 20,
     types: ['Water']
   },
   {
-    number: 7,
+    number: 62,
     name: 'Poliwrath',
     height: 1.3,
     weight: 54,
     types: ['Water', 'Fighting']
   },
   {
-    number: 7,
+    number: 63,
     name: 'Abra',
     height: .9,
     weight: 19.5,
     types: ['Pyschic']
   },
   {
-    number: 7,
+    number: 64,
     name: 'Kadabra',
     height: 1.3,
     weight: 56.5,
     types: ['Psychic']
   },
   {
-    number: 7,
+    number: 65,
     name: 'Alakazam',
     height: 1.5,
     weight: 48,
     types: ['Pyschic']
   },
   {
-    number: 7,
+    number: 66,
     name: 'Machop',
     height: .8,
     weight: 19.5,
     types: ['Fighting']
   },
   {
-    number: 7,
+    number: 67,
     name: 'Machoke',
     height: 1.5,
     weight: 70.5,
     types: ['Fighting']
   },
   {
-    number: 7,
+    number: 68,
     name: 'Machamp',
-    height: ,
-    weight: ,
-    types: ['']
+    height: 1.6,
+    weight: 130,
+    types: ['Fighting']
   },
   {
-    number: 7,
-    name: '',
-    height: ,
-    weight: ,
-    types: ['']
+    number: 69,
+    name: 'Bellsprout',
+    height: .7,
+    weight: 4,
+    types: ['Grass', 'Poison']
   },
   {
-    number: 7,
-    name: '',
-    height: ,
-    weight: ,
-    types: ['']
+    number: 70,
+    name: 'Weepinbell',
+    height: 1,
+    weight: 6.4,
+    types: ['Grass', 'Poison']
   },
+  {
+    number: 71,
+    name: 'Victreebel',
+    height: 1.7,
+    weight: 15.5,
+    types: ['Grass', 'Poison']
+  }
 ]
