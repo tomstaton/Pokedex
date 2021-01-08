@@ -1,11 +1,11 @@
-pokemonList = [
+let pokemonList = [
   //{
   //  number: #,
   //  name: 'pokemon',
   //  height: #,
   //  weight: #,
   //  types: ['array of strings', '...']
-//}
+//},
   { 
     number: 7,
     name: 'Squirtle',
@@ -204,7 +204,7 @@ pokemonList = [
   },
   {
     number: 29,
-    name: 'Nidoran / "F" ',
+    name: 'Nidoran "F" ',
     height: .4,
     weight: 7,
     types: ['Poison'],
@@ -225,7 +225,7 @@ pokemonList = [
   },
   {
     number: 32,
-    name: 'Nidoran / "M"',
+    name: 'Nidoran "M"',
     height: .5,
     weight: 9,
     types: ['Poison'],
@@ -504,3 +504,9 @@ pokemonList = [
     types: ['Grass', 'Poison']
   }
 ]
+for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].height >=1.5){
+    document.write("/   /" + pokemonList[i].name + " - Height: " + pokemonList[i].height + " Wow!");
+  }else if (pokemonList[i].height <1.5);
+    document.write("/   /" + pokemonList[i].name + " - Height: " + pokemonList[i].height)
+}
