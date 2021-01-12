@@ -504,9 +504,7 @@ let pokemonList = [
     types: ['Grass', 'Poison']
   }
 ]
-for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height >=1.5){
-    document.write("<p>" + pokemonList[i].name + " - Height: " + pokemonList[i].height + " Wow!");
-  }else {
-    document.write("<p>" + pokemonList[i].name + " - Height: " + pokemonList[i].height)}
-}
+
+pokemonList.forEach(function(pokemon) {
+  document.write('<p>' + pokemon.name + ' is ' + pokemon.height + ' tall, and weighs ' + pokemon.weight)
+});
