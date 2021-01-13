@@ -37,4 +37,4 @@ let pokemonRepository = (function () {
   };
 })();
 
-window.document.write( pokemonRepository.getAll() );
+console.log( pokemonRepository.getAll() );
