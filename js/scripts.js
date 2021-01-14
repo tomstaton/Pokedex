@@ -21,11 +21,11 @@ let pokemonRepository = (function () {
       weight: 85.5,
       types: ['Water']
     }
-  ]
+  ];
 
   function getAll() {
-    return pokemonList;
-  }
+    return pokemonList
+    };
 
   function add(pokemon) {
     pokemonList.push(pokemon);
@@ -35,6 +35,13 @@ let pokemonRepository = (function () {
     getAll: getAll,
     add: add
   };
+
 })();
 
-console.log( pokemonRepository.getAll() );
+function displayPmon() {
+  pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write('<p>' + pokemon.name + ' is ' + pokemon.height + ' units tall and weighs ' + pokemon.weight)
+  });
+}
+
+displayPmon()
