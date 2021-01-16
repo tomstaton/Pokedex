@@ -33,15 +33,18 @@ let pokemonRepository = (function () {
 
   return {
     getAll: getAll,
-    add: add
+    add: add,
   };
-
 })();
 
-function displayPmon() {
-  pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write('<p>' + pokemon.name + ' is ' + pokemon.height + ' units tall and weighs ' + pokemon.weight)
-  });
-}
 
-displayPmon()
+pokemonRepository.getAll().forEach(function (pokemon) {
+
+  let pList = document.querySelector('.pokeList');
+  let listpokemon = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = "placeholder";
+  button.classList.add('pikaButton');
+  listpokemon.appendChild(button);
+  pList.appendChild(listpokemon);
+  });
