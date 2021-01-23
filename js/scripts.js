@@ -1,21 +1,18 @@
 let pokemonRepository = (function () {
   let pokemonList = [
     { 
-      number: 7,
       name: 'Squirtle',
       height: .5,
       weight: 9,
       types: ['Water']
     },
     {
-      number: 8,
       name: 'Wartortle',
       height: 1,
       weight: 22.5,
       types: ['Water']
     },
     {
-      number: 9,
       name: 'Blastoise',
       height: 1.6,
       weight: 85.5,
@@ -31,20 +28,31 @@ let pokemonRepository = (function () {
     pokemonList.push(pokemon);
   }
 
+  function addListItem (pokemon) {
+    let pList = document.querySelector(".pokeList");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-design");
+    listpokemon.appendChild(button);
+    pList.appendChild(listpokemon);
+    button.addEventListener("click", function(event){
+      showDetails(pokemon)
+    })
+  };
+  
+  function showDetails (pokemon) {
+    console.log(pokemon)
+
+  };
   return {
     getAll: getAll,
     add: add,
+    addListItem: addListItem
   };
 })();
 
-
 pokemonRepository.getAll().forEach(function (pokemon) {
+  pokemonRepository.addListItem(pokemon);
 
-  let pList = document.querySelector('.pokeList');
-  let listpokemon = document.createElement('li');
-  let button = document.createElement('button');
-  button.innerText = "placeholder";
-  button.classList.add('pikaButton');
-  listpokemon.appendChild(button);
-  pList.appendChild(listpokemon);
-  });
+});

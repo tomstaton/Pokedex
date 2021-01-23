@@ -1,17 +1,25 @@
-.pikaButton {
+.button-design {
   background-color: #FFD700;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 16px;
   border: none;
   text-align: center;
-  padding: 16px 20px;
+  padding: 40px 60px;
+  margin: 4px 2px;
   border-radius: 6px;
   transition-duration: 0.4s;
   box-shadow: 0 24px 18px 0 rgba(0,0,0,0.2), 0 26px 20px 0 rgba(0,0,0,0.4)
 }
 
-.pikaButton:hover {
+.button-design:hover {
   background-color: #ffd650;
   box-shadow: 0 30px 24px 0 rgba(0,0,0,0.6), 0 32px 26px 0 rgba(0,0,0,0.8);
   opacity: 0.9;
+}
+
+.button-design:active {
+  border: none;
+  box-shadow: 0;
+  
+
 }
