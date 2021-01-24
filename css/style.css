@@ -5,21 +5,21 @@
   border: none;
   text-align: center;
   padding: 40px 60px;
-  margin: 4px 2px;
-  border-radius: 6px;
+  margin: 10px 8px;
+  border-radius: 18px;
   transition-duration: 0.4s;
-  box-shadow: 0 24px 18px 0 rgba(0,0,0,0.2), 0 26px 20px 0 rgba(0,0,0,0.4)
+  box-shadow: 0 24px 18px 0 rgba(0,0,0,0.2), 0 24px 20px 0 rgba(0,0,0,0.4)
 }
 
 .button-design:hover {
   background-color: #ffd650;
-  box-shadow: 0 30px 24px 0 rgba(0,0,0,0.6), 0 32px 26px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 30px 24px 0 rgba(0,0,0,0.6), 0 32px 26px 0 rgba(0,0,0,0.6);
   opacity: 0.9;
 }
 
 .button-design:active {
   border: none;
   box-shadow: 0;
-  
+
 
 }
