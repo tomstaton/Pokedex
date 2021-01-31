@@ -57,10 +57,13 @@ let pokemonRepository = (function () {
     pokemonHeight.innerText = "Height: " + pokemon.height;
   
     let pokemonTypes = document.createElement('p');
-    pokemonTypes.innerText = "Type(s): " + pokemon.types;
+    if (pokemon.types.length === 1){pokemonTypes.innerText = "Type: " + pokemon.types;
+    } else {
+      pokemonTypes.innerText = "Types: " + pokemon.types.join(', ');
+    }
 
     let pokemonAbilities = document.createElement('p');
-    pokemonAbilities.innerText = "Abilities: " + pokemon.abilities;
+    pokemonAbilities.innerText = "Abilities: " + pokemon.abilities.join(', ');
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(pokemonName);
