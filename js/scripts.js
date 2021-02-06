@@ -16,7 +16,7 @@ let pokemonRepository = (function () {
     let listpokemon = document.createElement("li"); //creates item in a list
     let button = document.createElement("button"); //creates a button
     button.innerText = pokemon.name; //assigns text to the generated button
-    button.classList.add("button-design", "btn", "btn-primary", "list-group-item"); //gives the button a class for reference from CSS
+    button.classList.add("button-design", "btn-primary", "group-list-item"); //gives the button a class for reference from CSS
     pList.appendChild(listpokemon); //creates item in a list
     listpokemon.appendChild(button); //adds child element - button - to the already created button
     button.addEventListener("click", function (event) {
@@ -27,7 +27,8 @@ let pokemonRepository = (function () {
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       console.log(pokemon);
-      showModal(pokemon);
+      showModal(pokemon)
+      $('#modal-container').modal("show")
     });
   }
 
@@ -75,11 +76,10 @@ let pokemonRepository = (function () {
       });
   }
 
-  let modalContainer = $("#modal-container");
-
   function showModal(item) {
+    let modalContainer = $("#modal-container");
     let modalBody = $(".modal-body");
-    let modalTitle = $(".modal-title");
+    let modalTitle = $(".modal-header");
 
     modalTitle.empty();
     modalBody.empty();
@@ -92,26 +92,26 @@ let pokemonRepository = (function () {
     imageElementFront.attr("src", item.imageUrl);
 
     let heightElement = $("<p>" + "Height: " + item.height + "</p>")
-  
-    let typesElement = $("<p>" + "Types: " + item.types + "</p>")
 
-    let abilitiesElement = $("<p>" + item.abilities + "Abilities: " + "</p>")
+    let typesElement = $("<p>" + "Types: " + item.types.join(', ') + "</p>");
+      if (item.types.length === 1){
+        typesElement = $("<p>" + "Type: " + item.types + "</p>")
+      }
+
+    let abilitiesElement = $("<p>" + "Abilities: " + item.abilities.join(', ') + "</p>");
 
     modalTitle.append(nameElement);
     modalBody.append(imageElementFront);
     modalBody.append(heightElement);
     modalBody.append(typesElement);
     modalBody.append(abilitiesElement);
-  
-    modalContainer.addClass("is-visible");
   }
       
   function hideModal() {
-    modalContainer.classList.remove("is-visible");
-    let closeButtonElement = document.createElement("button");
-    closeButtonElement.addClass("modal-close");
-    closeButtonElement.innerText = 'Close';
-    closeButtonElement.addEventListener("click", hideModal);   
+  let closeButtonElement = document.createElement("button");
+  closeButtonElement.classList.add("modal-close");
+  closeButtonElement.innerText = 'Close';
+  closeButtonElement.addEventListener("click", hideModal);
   }
 
   return {
