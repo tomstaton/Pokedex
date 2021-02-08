@@ -11,9 +11,9 @@ let pokemonRepository = (function () {
   }
 
   function addListItem(pokemon) {
-    var $listItem = $('<li class="list-group-item"></li>');
-    var $ul = $(".pokeList");
-    var $button = $(
+    let $listItem = $('<li class="list-group-item"></li>');
+    let $ul = $(".pokeList");
+    let $button = $(
       '<button type="button" class="button-design btn-primary group-list-item" data-toggle="modal" data-target="#modal-container">' +
         pokemon.name +
         "</button>"
@@ -29,9 +29,9 @@ let pokemonRepository = (function () {
   function showDetails(item) {
     $(".modal").innerHTML = "";
     $(document).on("click", ".group-list-item", function () {
-      var $nameElement = $("<h5>" + item.name + "</h5>");
-      var $heightElement = $("<p>" + "Height: " + item.height + "</p>");
-      var $imageElement = $(
+      let $nameElement = $("<h5>" + item.name + "</h5>");
+      let $heightElement = $("<p>" + "Height: " + item.height + "</p>");
+      let $imageElement = $(
         '<img src="' + item.imageUrl + '"alt=' + item.name + ">"
       );
       let $typesElement = $("<p>" + "Types: " + item.types.join(", ") + "</p>");
